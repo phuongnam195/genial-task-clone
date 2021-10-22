@@ -15,4 +15,4 @@ In progress...
 </table>
 
 ## Original
-[GenialTask](https://play.google.com/store/apps/details?id=com.genialtask)
+[Google Play/GenialTask](https://play.google.com/store/apps/details?id=com.genialtask)
