@@ -32,7 +32,6 @@ class MyApp extends StatelessWidget {
                 debugShowCheckedModeBanner: false,
                 theme: ThemeData(
                   primaryColor: Color(0xFF392F42),
-                  accentColor: Color(0xFFFF6B94),
                   hintColor: Color(0xFF7E8EAA),
                   fontFamily: 'Mulish',
                   textTheme: ThemeData.light().textTheme.copyWith(
@@ -64,6 +63,8 @@ class MyApp extends StatelessWidget {
                           color: Color(0xFF8493AE),
                           fontSize: 16,
                           fontWeight: FontWeight.w500)),
+                  colorScheme: ColorScheme.fromSwatch()
+                      .copyWith(secondary: Color(0xFFFF6B94)),
                 ),
                 initialRoute: MainScreen.routeName,
                 // initialRoute: WelcomeScreen.routeName,

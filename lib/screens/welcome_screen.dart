@@ -35,7 +35,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         child: Icon(
           Icons.circle,
           color: _currentPage == page
-              ? Theme.of(context).accentColor
+              ? Theme.of(context).colorScheme.secondary
               : Colors.grey[300],
           size: 10,
         ),

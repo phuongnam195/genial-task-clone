@@ -63,7 +63,9 @@ class GenialCheckbox extends StatelessWidget {
               child: Icon(
                 (alterIcon != null && value) ? alterIcon : icon,
                 size: 18,
-                color: value ? Colors.white : Theme.of(context).accentColor,
+                color: value
+                    ? Colors.white
+                    : Theme.of(context).colorScheme.secondary,
               ),
             ),
           ),

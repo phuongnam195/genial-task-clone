@@ -24,7 +24,7 @@ class _TaskItemState extends State<TaskItem> {
         children: [
           Checkbox(
             checkColor: Colors.white,
-            activeColor: Theme.of(context).accentColor,
+            activeColor: Theme.of(context).colorScheme.secondary,
             value: task.isCompleted,
             onChanged: (value) {
               task.toggleCompleted();

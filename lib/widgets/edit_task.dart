@@ -109,7 +109,7 @@ class _EditTaskState extends State<EditTask> {
                 child: TextField(
                   autofocus: true,
                   controller: _textController,
-                  cursorColor: Theme.of(context).accentColor,
+                  cursorColor: Theme.of(context).colorScheme.secondary,
                   decoration: InputDecoration(
                     border: InputBorder.none,
                     hintText: 'What do you want to do?',

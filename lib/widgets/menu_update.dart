@@ -42,7 +42,8 @@ class MenuUpdate extends StatelessWidget {
           children: [
             menuItem('Edit', 1),
             menuItem('Sort', 2),
-            menuItem('Delete', 3, textColor: Theme.of(context).accentColor),
+            menuItem('Delete', 3,
+                textColor: Theme.of(context).colorScheme.secondary),
             menuItem('Cancel', 4),
           ],
         ),

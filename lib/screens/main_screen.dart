@@ -73,8 +73,9 @@ class _MainScreenState extends State<MainScreen> {
     }
 
     return Scaffold(
+        resizeToAvoidBottomInset: true,
         appBar: AppBar(
-          toolbarHeight: 80,
+          toolbarHeight: 64,
           flexibleSpace: Row(
             children: [
               GenialAppBarTab(
@@ -129,10 +130,15 @@ class _MainScreenState extends State<MainScreen> {
           onPressed: () {
             showModalBottomSheet(
                 context: context,
+                isScrollControlled: true,
                 routeSettings: RouteSettings(
                     arguments: _currentTab == 1 ? Date.tomorrow() : null),
                 builder: (_) {
-                  return EditTask();
+                  return Padding(
+                    padding: EdgeInsets.only(
+                        bottom: MediaQuery.of(context).viewInsets.bottom),
+                    child: EditTask(),
+                  );
                 });
           },
         ),

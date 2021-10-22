@@ -98,7 +98,7 @@ class StatisticsScreen extends StatelessWidget {
                   Icons.sentiment_very_dissatisfied,
                   tasksContainer.failedTasks.length.toString(),
                   'failed',
-                  Theme.of(context).accentColor,
+                  Theme.of(context).colorScheme.secondary,
                   FailedTasksScreen.routeName),
             ],
           ),

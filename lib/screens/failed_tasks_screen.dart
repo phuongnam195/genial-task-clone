@@ -18,7 +18,7 @@ class FailedTasksScreen extends StatelessWidget {
             children: [
               Icon(
                 Icons.sentiment_very_dissatisfied,
-                color: Theme.of(context).accentColor,
+                color: Theme.of(context).colorScheme.secondary,
                 size: 35,
               ),
               SizedBox(width: 10),

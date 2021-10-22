@@ -17,7 +17,7 @@ class GenialAppBarTab extends StatelessWidget {
       splashFactory: InkRipple.splashFactory,
       onTap: () => onPressed(),
       child: Padding(
-        padding: const EdgeInsets.only(left: 10, right: 10, top: 20),
+        padding: const EdgeInsets.only(left: 10, right: 10, top: 30),
         child: Column(
           children: [
             Text(
@@ -33,7 +33,7 @@ class GenialAppBarTab extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 3),
                 child: Icon(Icons.circle,
-                    color: Theme.of(context).accentColor, size: 10),
+                    color: Theme.of(context).colorScheme.secondary, size: 10),
               ),
           ],
         ),
